@@ -19,7 +19,7 @@ controller.on('rtm_close', function (bot) {
 
 
 /**
- * Core bot logic goes here!
+ * bot logic goes here!
  */
 // BEGIN EDITING HERE!
 
