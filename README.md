@@ -14,25 +14,22 @@
 
     Your bot will now attempt to log into your team, and you should be able talk to it. Try telling your new bot “hello”. It should say “Hello!” back!
 
-8. Botkit is structured around event listeners. The most important is the “hear” listener, which kicks off an action when your bot hears something. `index.js` contains the core logic, and has this event listener:
+## Hurrah!
+
+8. Botkit provides us with event listeners. In your file you will find the "hear" listener. This listens for a certain message and then takes an action. See:
 
     ```javascript
     controller.hears('hello','direct_message', function(bot,message) {
         bot.reply(message, 'Hello!');
     });
     ```
+In this case when the bot receives a direct message from a user that contains the word “hello”, it responds with, “Hello!”
 
-    This event handler is triggered when the bot receives a direct message from a user that contains the word “hello.”
-
-    The bot responds in the direct message with, “Hello!”
-
-9. You can listen to any kind of message or you can configure your bot to only listen to direct messages or specific @-mentions of your bot. It’s up to you! To start let’s re-write the event listener to be more  flexible about the greetings it is listening for:
+9. You can configure your bot to listen to mentions by using 'mention' as a keyword. You can include more greetings too:
     ```javascript
     controller.hears(['hello', 'hi', 'greetings'], ['direct_mention', 'mention', 'direct_message'], function(bot,message) {
          bot.reply(message, 'Hello!');
      });
     ```
 
-    Now our bot will respond any time it sees “hello,” “hi,” or “greetings” in either a DM or a message that @-mentions the bot. (Don’t forget to restart your bot after each edit!)
-
-## Hurrah!
+(Restart your bot after each edit!)
