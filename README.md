@@ -1,3 +1,5 @@
+## A stripped down version of Don's repo for an intro lecture
+
 # Using Botkit for Custom Bots
 1. Fork this project.
 2. Open up your favorite terminal app, and clone your new repository to your local computer.
