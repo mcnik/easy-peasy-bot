@@ -16,20 +16,4 @@
 
 ## Hurrah!
 
-8. Botkit provides us with event listeners. In your file you will find the "hear" listener. This listens for a certain message and then takes an action. See:
-
-    ```javascript
-    controller.hears('hello','direct_message', function(bot,message) {
-        bot.reply(message, 'Hello!');
-    });
-    ```
-In this case when the bot receives a direct message from a user that contains the word “hello”, it responds with, “Hello!”
-
-9. You can configure your bot to listen to mentions by using 'mention' as a keyword. You can include more greetings too:
-    ```javascript
-    controller.hears(['hello', 'hi', 'greetings'], ['direct_mention', 'mention', 'direct_message'], function(bot,message) {
-         bot.reply(message, 'Hello!');
-     });
-    ```
-
-(Restart your bot after each edit!)
+Now for step 2!
