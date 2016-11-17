@@ -1,4 +1,4 @@
-## A stripped down version of Don's repo for an intro lecture
+#### A stripped down version of Don's repo for an intro lecture
 
 # Using Botkit for Custom Bots
 1. Fork this project.
