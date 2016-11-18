@@ -18,4 +18,4 @@
 
 ## Hurrah!
 
-Now for step 2!
+We will work on step 2 in class!
