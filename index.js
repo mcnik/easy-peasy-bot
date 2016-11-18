@@ -22,5 +22,11 @@ controller.on('rtm_close', function (bot) {
  * bot logic goes here!
  */
 // BEGIN EDITING HERE!
+controller.hears('hello', 'direct_message', function (bot, message) {
+    bot.reply(message, 'Hello!');
+});
 
-
+// When your bot joins a channel, it announces it's presence. Spooky? I know!
+controller.on('bot_channel_join', function (bot, message) {
+    bot.reply(message, "I'm here!")
+});
