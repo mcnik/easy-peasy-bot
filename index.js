@@ -17,7 +17,6 @@ controller.on('rtm_close', function (bot) {
     // you may want to attempt to re-open
 });
 
-
 /**
  * bot logic goes here!
  */
@@ -30,3 +29,8 @@ controller.hears('hello', 'direct_message', function (bot, message) {
 controller.on('bot_channel_join', function (bot, message) {
     bot.reply(message, "I'm here!")
 });
+
+/*
+ * You will be adding code to reply to different greetings, to reply to direct messages and mentions 
+ * and finally to help your bot add reactions.
+ */
